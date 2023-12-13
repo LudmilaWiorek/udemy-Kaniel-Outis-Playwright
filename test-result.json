@@ -1,0 +1,269 @@
+{
+  "test": "basic test",
+  "status": "interrupted",
+  "executionTime": 333,
+  "errors": [
+    {
+      "message": "\u001b[31mTest timeout of 30000ms exceeded.\u001b[39m"
+    },
+    {
+      "message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://playwright.dev/\", waiting until \"load\"\n============================================================",
+      "stack": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"https://playwright.dev/\", waiting until \"load\"\n============================================================\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\sample.spec.ts:4:12"
+    },
+    {
+      "message": "Pending operations:\n  - page.goto at tests\\sample.spec.ts:4:12\n"
+    }
+  ]
+}{
+  "test": "basic test",
+  "status": "passed",
+  "executionTime": 1785,
+  "errors": []
+}{
+  "test": "basic test",
+  "status": "passed",
+  "executionTime": 2568,
+  "errors": []
+}{
+  "test": "basic test",
+  "status": "passed",
+  "executionTime": 1235,
+  "errors": []
+}{
+  "test": "basic test",
+  "status": "passed",
+  "executionTime": 906,
+  "errors": []
+}{
+  "test": "basic test",
+  "status": "passed",
+  "executionTime": 1419,
+  "errors": []
+}{
+  "test": "Simple API Test - Assert Invalid Endpoint",
+  "status": "passed",
+  "executionTime": 230,
+  "errors": []
+}{
+  "test": "Simple API Test - Assert Response Status",
+  "status": "passed",
+  "executionTime": 266,
+  "errors": []
+}{
+  "test": "PUT Request - Update User",
+  "status": "passed",
+  "executionTime": 163,
+  "errors": []
+}{
+  "test": "DELETE Request - Delete User",
+  "status": "passed",
+  "executionTime": 156,
+  "errors": []
+}{
+  "test": "Negative Scenario for login",
+  "status": "passed",
+  "executionTime": 5604,
+  "errors": []
+}{
+  "test": "Positive Scenario for login + logout",
+  "status": "failed",
+  "executionTime": 9223,
+  "errors": [
+    {
+      "message": "\u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#account_summary_tab')\u001b[22m\n\u001b[2m  - waiting for locator('#account_summary_tab')\u001b[22m\n",
+      "stack": "Error: \u001b[31mTimed out 5000ms waiting for \u001b[39m\u001b[2mexpect(\u001b[22m\u001b[31mreceived\u001b[39m\u001b[2m).\u001b[22mtoBeVisible\u001b[2m()\u001b[22m\nCall log:\n  \u001b[2m- expect.toBeVisible with timeout 5000ms\u001b[22m\n\u001b[2m  - waiting for locator('#account_summary_tab')\u001b[22m\n\u001b[2m  - waiting for locator('#account_summary_tab')\u001b[22m\n\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e\\e2e-login.spec.ts:30:41"
+    }
+  ]
+}{
+  "test": "Verify the result for each account",
+  "status": "failed",
+  "executionTime": 17630,
+  "errors": [
+    {
+      "message": "page.click: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('#account_activity_tab')\n============================================================",
+      "stack": "page.click: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('#account_activity_tab')\n============================================================\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e\\e2e-filter-transactions.spec.ts:19:20"
+    }
+  ]
+}{
+  "test": "Should send new payment",
+  "status": "failed",
+  "executionTime": 15214,
+  "errors": [
+    {
+      "message": "locator.click: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('#pay_bills_tab')\n============================================================",
+      "stack": "locator.click: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('#pay_bills_tab')\n============================================================\n    at Navbar.clickOnTab (C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\page-objects\\components\\Navbar.ts:34:37)\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e\\e2e-payment.spec.ts:26:16"
+    },
+    {
+      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+    }
+  ]
+}{
+  "test": "Should find search results",
+  "status": "passed",
+  "executionTime": 1825,
+  "errors": []
+}{
+  "test": "Reset feedback form",
+  "status": "passed",
+  "executionTime": 2326,
+  "errors": []
+}{
+  "test": "Should purchase foreign currency",
+  "status": "failed",
+  "executionTime": 20370,
+  "errors": [
+    {
+      "message": "locator.click: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('#pay_bills_tab')\n============================================================",
+      "stack": "locator.click: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('#pay_bills_tab')\n============================================================\n    at Navbar.clickOnTab (C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\page-objects\\components\\Navbar.ts:34:37)\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e\\e2e-purchase-foreign-currency-cash.spec.ts:25:22"
+    }
+  ]
+}{
+  "test": "Submit feedback form",
+  "status": "passed",
+  "executionTime": 2897,
+  "errors": []
+}{
+  "test": "Verify the result for each account",
+  "status": "passed",
+  "executionTime": 4944,
+  "errors": []
+}{
+  "test": "Negative Scenario for login",
+  "status": "passed",
+  "executionTime": 2271,
+  "errors": []
+}{
+  "test": "Positive Scenario for login + logout",
+  "status": "passed",
+  "executionTime": 3869,
+  "errors": []
+}{
+  "test": "Should send new payment",
+  "status": "passed",
+  "executionTime": 4459,
+  "errors": []
+}{
+  "test": "Transfer funds",
+  "status": "failed",
+  "executionTime": 15214,
+  "errors": [
+    {
+      "message": "locator.click: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('#transfer_funds_tab')\n============================================================",
+      "stack": "locator.click: Timeout 15000ms exceeded.\n=========================== logs ===========================\nwaiting for locator('#transfer_funds_tab')\n============================================================\n    at Navbar.clickOnTab (C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\page-objects\\components\\Navbar.ts:31:42)\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e\\e2e-transfer-funds.spec.ts:25:16"
+    },
+    {
+      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+    }
+  ]
+}{
+  "test": "Should find search results",
+  "status": "interrupted",
+  "executionTime": 156,
+  "errors": [
+    {
+      "message": "\u001b[31mTest timeout of 60000ms exceeded while setting up \"page\".\u001b[39m"
+    },
+    {
+      "message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"http://zero.webappsecurity.com/index.html\", waiting until \"load\"\n============================================================",
+      "stack": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"http://zero.webappsecurity.com/index.html\", waiting until \"load\"\n============================================================\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e-old\\e2e-old-search.spec.ts:5:20"
+    },
+    {
+      "message": "Pending operations:\n  - browserContext.newPage\n"
+    }
+  ]
+}{
+  "test": "Should purchase foreign currency",
+  "status": "interrupted",
+  "executionTime": 2687,
+  "errors": [
+    {
+      "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+      "stack": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e-old\\e2e-old-purchase-foreign-currency-cash.spec.ts:4:10"
+    },
+    {
+      "message": "page.goto: net::ERR_ABORTED; maybe frame was detached?\n=========================== logs ===========================\nnavigating to \"http://zero.webappsecurity.com/bank/transfer-funds.html\", waiting until \"load\"\n============================================================",
+      "stack": "page.goto: net::ERR_ABORTED; maybe frame was detached?\n=========================== logs ===========================\nnavigating to \"http://zero.webappsecurity.com/bank/transfer-funds.html\", waiting until \"load\"\n============================================================\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e-old\\e2e-old-purchase-foreign-currency-cash.spec.ts:10:20"
+    },
+    {
+      "message": "Pending operations:\n  - page.goto at tests\\e2e-old\\e2e-old-purchase-foreign-currency-cash.spec.ts:10:20\n"
+    }
+  ]
+}{
+  "test": "Simple API Test - Assert Response Status",
+  "status": "passed",
+  "executionTime": 157,
+  "errors": []
+}{
+  "test": "Simple API Test - Assert Invalid Endpoint",
+  "status": "passed",
+  "executionTime": 206,
+  "errors": []
+}{
+  "test": "GET Request - Get User Detail",
+  "status": "passed",
+  "executionTime": 77,
+  "errors": []
+}{
+  "test": "POST Request - Create New User",
+  "status": "passed",
+  "executionTime": 186,
+  "errors": []
+}{
+  "test": "POST Request - Login",
+  "status": "passed",
+  "executionTime": 171,
+  "errors": []
+}{
+  "test": "POST Request - Login Fail",
+  "status": "passed",
+  "executionTime": 150,
+  "errors": []
+}{
+  "test": "PUT Request - Update User",
+  "status": "passed",
+  "executionTime": 181,
+  "errors": []
+}{
+  "test": "DELETE Request - Delete User",
+  "status": "passed",
+  "executionTime": 192,
+  "errors": []
+}{
+  "test": "Verify the result for each account",
+  "status": "interrupted",
+  "executionTime": 1091,
+  "errors": [
+    {
+      "message": "\u001b[31mTest timeout of 60000ms exceeded.\u001b[39m"
+    },
+    {
+      "message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"http://zero.webappsecurity.com/index.html\", waiting until \"load\"\n============================================================",
+      "stack": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"http://zero.webappsecurity.com/index.html\", waiting until \"load\"\n============================================================\n    at HomePage.visit (C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\page-objects\\HomePage.ts:17:25)\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e\\e2e-filter-transactions.spec.ts:13:18"
+    },
+    {
+      "message": "Pending operations:\n  - page.goto at page-objects\\HomePage.ts:17:25\n  - locator.click at page-objects\\HomePage.ts:21:33\n  - locator.type at page-objects\\LoginPage.ts:25:34\n  - page.click at tests\\e2e\\e2e-filter-transactions.spec.ts:19:20\n"
+    }
+  ]
+}{
+  "test": "Negative Scenario for login",
+  "status": "interrupted",
+  "executionTime": 924,
+  "errors": [
+    {
+      "message": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m",
+      "stack": "\u001b[31mTest timeout of 60000ms exceeded while running \"beforeEach\" hook.\u001b[39m\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e\\e2e-login.spec.ts:9:10"
+    },
+    {
+      "message": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"http://zero.webappsecurity.com/index.html\", waiting until \"load\"\n============================================================",
+      "stack": "page.goto: Navigation failed because page was closed!\n=========================== logs ===========================\nnavigating to \"http://zero.webappsecurity.com/index.html\", waiting until \"load\"\n============================================================\n    at HomePage.visit (C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\page-objects\\HomePage.ts:17:25)\n    at C:\\Users\\Hyperbook\\Desktop\\UDEMY-PLAYWRIGHT\\tests\\e2e\\e2e-login.spec.ts:13:24"
+    },
+    {
+      "message": "Pending operations:\n  - page.goto at page-objects\\HomePage.ts:17:25\n"
+    }
+  ]
+}{
+  "test": "basic test",
+  "status": "passed",
+  "executionTime": 770,
+  "errors": []
+}

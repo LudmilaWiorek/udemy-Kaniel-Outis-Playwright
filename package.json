@@ -1,0 +1,37 @@
+{
+  "name": "udemy-playwright",
+  "version": "1.0.0",
+  "description": "Automated software testing with Playwright",
+  "main": "index.js",
+  "scripts": {
+    "tests:chrome": "playwright test --config=playwright.config.ts --project=Chromium --reporter=list",
+    "tests:firefox": "playwright test --config=playwright.config.ts --project=Firefox --reporter=list",
+    "tests:webkit": "playwright test --config=playwright.config.ts --project=Webkit --reporter=list",
+    "tests:e2e": "playwright test --config=e2e.config.ts --project=Chromium",
+    "tests:e2e-old": "playwright test --config=e2e-old.config.ts --project=Chromium",
+    "tests:visual:chrome": "playwright test --config=visual.config.ts --project=Chromium",
+    "tests:visual:firefox": "playwright test --config=visual.config.ts --project=Firefox",
+    "tests:visual:webkit": "playwright test --config=visual.config.ts --project=Webkit",
+    "tests:visual:chrome:update": "playwright test --config=visual.config.ts --project=Chromium --update-snapshots",
+    "tests:visual:firefox:update": "playwright test --config=visual.config.ts --project=Firefox --update-snapshots",
+    "tests:visual:webkit:update": "playwright test --config=visual.config.ts --project=Webkit --update-snapshots",
+    "tests:api": "playwright test --config=api.config.ts --project=Chromium --reporter=html",
+    "jenkins-server": "java -jar jenkins.war --httpPort=8080 --enable-future-java",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tests:sample": "playwright test --config=sample.config.ts --project=Chromium --reporter=reporter.ts"
+  },
+  "author": "Ludka",
+  "license": "ISC",
+  "dependencies": {
+    "@cucumber/cucumber": "^8.10.0",
+    "@playwright/test": "^1.29.1",
+    "chai": "^4.3.7",
+    "cucumber-html-reporter": "^5.5.0",
+    "playwright": "^1.29.1",
+    "prettier": "^2.8.1"
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "keywords": []
+}
