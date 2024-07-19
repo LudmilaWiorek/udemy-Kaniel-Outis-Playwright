@@ -1,10 +1,11 @@
-import { test } from '@playwright/test'
+import { test, expect } from '@playwright/test'
 import { HomePage } from '../../page-objects/HomePage'
 import { LoginPage } from '../../page-objects/LoginPage'
 import { Navbar } from '../../page-objects/components/Navbar'
 import { CurrencyExchange } from '../../page-objects/CurrencyExchange'
+import { PurchaseCurrencyModel } from '../../models/interfaceforcurrencypurch.model'
 
-test.describe('Purchase foregin currency cash', () => {
+test.describe('Purchase foreign currency cash', () => {
   let homePage: HomePage
   let loginPage: LoginPage
   let navbar: Navbar
@@ -22,8 +23,17 @@ test.describe('Purchase foregin currency cash', () => {
   })
 
   test('Should purchase foreign currency', async ({ page }) => {
+    const purchaseCurrency: PurchaseCurrencyModel = {
+      currencySelectBox: 'EUR',
+      amountInput: '500',
+    }
     await navbar.clickOnTab('Pay Bills')
-    await currencyExchange.createPurchaseCurrency()
-    await currencyExchange.assertSuccessMessage()
+    await currencyExchange.purchaseCurrencyNewFunction(purchaseCurrency)
+
+    const successMessage = page.locator('#alert_content')
+    await expect(successMessage).toBeVisible()
+    await expect(successMessage).toContainText(
+      'Foreign currency cash was successfully purchased.'
+    )
   })
 })
