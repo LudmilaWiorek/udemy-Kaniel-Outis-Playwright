@@ -24,7 +24,7 @@ test.describe('Purchase foreign currency cash', () => {
 
   test('Should purchase foreign currency', async ({ page }) => {
     const purchaseCurrency: PurchaseCurrencyModel = {
-      currencySelectBox: 'EUR',
+      currency: 'EUR',
       amountInput: '500',
     }
     await navbar.clickOnTab('Pay Bills')

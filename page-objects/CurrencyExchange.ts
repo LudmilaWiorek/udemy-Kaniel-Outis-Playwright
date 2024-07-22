@@ -28,11 +28,18 @@ export class CurrencyExchange {
 
   async purchaseCurrencyNewFunction(purchaseCurrency: PurchaseCurrencyModel) {
     await this.purchaseForeignCurrency.click()
-    await this.currencySelectBox.selectOption(
-      purchaseCurrency.currencySelectBox
-    )
-    await this.amountInput.fill(purchaseCurrency.amountInput)
+    await this.setCurrencyFrom(purchaseCurrency.currency)
+    await this.fillCurrencyAmount(purchaseCurrency.amountInput)
     await this.dollarRadio.click()
+    await this.acceptCurrencyExchange()
+  }
+  async setCurrencyFrom(currency: string) {
+    await this.currencySelectBox.selectOption(currency)
+  }
+  async fillCurrencyAmount(amount: string) {
+    await this.amountInput.fill(amount)
+  }
+  async acceptCurrencyExchange() {
     await this.calculateCostsButton.click()
     await this.purchaseButton.click()
   }

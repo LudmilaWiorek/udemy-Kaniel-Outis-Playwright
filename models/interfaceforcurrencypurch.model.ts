@@ -1,8 +1,5 @@
 export interface PurchaseCurrencyModel {
-  currencySelectBox: string
+  currency:  'EUR'| "USD" | "PLN",
   amountInput: string
 }
 
-interface Currencies {
-  
-}
